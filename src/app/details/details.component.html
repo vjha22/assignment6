@@ -1,0 +1,21 @@
+<div class="container">
+    <div>
+        {{cur.title}}
+    
+    </div>
+    <div>
+        {{cur.author}}
+    
+    </div>
+    <div>
+        {{cur.price}}
+    
+    </div>
+    <div>
+        {{cur.description}}
+    
+    </div>
+    <div>
+        <a type="button"  class="btn btn-info" routerLink="cart/{{cur.id}}" (click)="add()">Add to cart</a>
+    </div>
+    </div>

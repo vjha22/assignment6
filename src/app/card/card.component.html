@@ -1,0 +1,22 @@
+
+<div class="back">
+<div *ngFor="let i of arr">
+    <div class="card" style="background-color:aqua">
+        <img class="card-img-top" src="../assets/images/{{i.img}}"  alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{i.title}}</h5>
+          
+
+          <p class="card-text">by: {{i.author}}
+              Price: {{i.price}}
+          </p>
+          <p class="card-text">
+            Price: {{i.price}}
+        </p>
+          
+          <a routerLink="details/{{i.id}}" class="btn btn-primary">Details</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  
